@@ -4,14 +4,17 @@ function setup() {
     canvas.class("p5canvas");
   }
 
-  function draw() {
-    background(0);
-  }
+window.onresize = function() {
+  var w = window.innerWidth;
+  var h = window.innerHeight;
+  canvas.size(w, h);
+  width = w;
+  height = h;
+}
 
-  window.onresize = function() {
-    var w = window.innerWidth;
-    var h = window.innerHeight;
-    canvas.size(w, h);
-    width = w;
-    height = h;
-  }
+function draw() {
+  background(0);
+
+  // create your drawing here
+  
+}
